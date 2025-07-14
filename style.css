@@ -1,0 +1,250 @@
+*::after,
+*::before,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f4f4f4;
+  background-image: url("images/HERO--IMAGE.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+:root {
+  --color-primary: #007bff;
+  --color-secondary: #b5b8ba;
+  --white: #f7f7f7;
+  --color-hover: #007bff27;
+}
+
+/** * Navbar Styles
+ */
+
+.navbar-brand img {
+  margin: 1rem 10rem;
+}
+
+.navbar {
+  display: flex;
+  background-color: #f7f7f7;
+  color: #fff;
+  padding: 1rem;
+  align-items: center;
+  font-weight: 600;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 25rem;
+}
+
+.navbar-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-links li {
+  margin: 0 1rem;
+}
+
+.navbar-links a {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+.navbar-links a:hover {
+  color: var(--color-primary);
+}
+
+.btn {
+  background: transparent;
+  border: 1px solid var(--color-secondary);
+  padding: 0.8rem 2rem;
+  border-radius: 10rem;
+  font-weight: 500;
+  margin-top: auto;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.nav-btn:hover {
+  background-color: var(--color-hover);
+  border: none;
+}
+
+/* HERO PAGE STYLE */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 87.5%;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.hero-content h1 {
+  font-size: 4.8rem;
+  margin-bottom: 1.5rem;
+  margin-left: -1rem;
+  font-family: "Crimson Text", serif;
+  font-weight: 500;
+}
+.hero-content--container {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: var(--white);
+}
+
+.btn-hero {
+  border-radius: 1rem;
+  padding: 1.5rem 10rem;
+  margin-right: 2rem;
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+
+.btn-blue {
+  background-color: var(--color-primary);
+  color: var(--white);
+  border: none;
+  font-size: 2rem;
+}
+.btn-blue:hover {
+  background-color: #034286;
+}
+.hero-content i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+
+.features-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 2rem;
+  background-color: rgb(11, 11, 57);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: var(--white);
+}
+.features-header span {
+  background-color: rgb(121, 121, 233);
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  position: relative;
+}
+.features-header i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+}
+
+.features-header button {
+  font-size: 1.2rem;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  justify-self: flex-end;
+  font-weight: 600;
+  margin-left: 40rem;
+}
+
+.features-card {
+  display: flex;
+  gap: 2rem;
+  max-width: 120rem;
+}
+.card {
+  display: flex;
+  width: 35%;
+  background-color: var(--color-primary);
+  margin-top: 2rem;
+  padding-left: 1rem;
+  border-radius: 2rem;
+}
+.card--left {
+  width: 0%;
+  padding: 3rem;
+}
+.card-left h5 {
+  font-size: rem;
+  font-size: 1.8rem;
+  padding: 0.6rem;
+  color: var(--white);
+}
+.card-left p {
+  padding: 0 0.6rem;
+}
+.features-card img {
+  width: 16rem;
+}
+
+.accommodation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+
+.find {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  margin-top: 2rem;
+  gap: 1.4em;
+}
+
+.accommodation img {
+  border-radius: 2rem;
+  height: 30rem;
+  position: relative;
+  color: var(--white);
+}
+
+.acc-card--content {
+  font-size: 2rem;
+  font-weight: 600;
+  position: absolute;
+  bottom: -50rem;
+  padding-left: 2rem;
+  color: var(--white);
+}
