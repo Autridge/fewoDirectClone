@@ -142,7 +142,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  background-color: var(--white);
   border-radius: 1rem;
   margin-top: 2rem;
 }
@@ -152,7 +151,7 @@ body {
   flex-direction: row;
   align-items: center;
 
-  gap: 2rem;
+  gap: 1rem;
   background-color: rgb(11, 11, 57);
   padding: 1.5rem;
   border-radius: 1rem;
@@ -178,19 +177,22 @@ body {
   font-size: 1.2rem;
   padding: 1rem 1.5rem;
   border-radius: 2rem;
-  justify-self: flex-end;
   font-weight: 600;
-  margin-left: 40rem;
+  margin-left: 35rem;
 }
 
 .features-card {
   display: flex;
-  gap: 2rem;
+  justify-content: space-between;
   max-width: 120rem;
+}
+
+.features-card:nth-last-child(1) {
+  gap: 2rem;
 }
 .card {
   display: flex;
-  width: 40%;
+  width: 45%;
   background-color: var(--color-primary);
   margin-top: 2rem;
   padding-left: 1rem;
@@ -233,7 +235,6 @@ body {
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  background-color: var(--white);
   border-radius: 1rem;
   margin-top: 1rem;
 }
@@ -242,6 +243,7 @@ body {
   margin-left: 15rem;
   color: var(--color-primary-dark);
   font-weight: 500;
+  font-size: 3rem;
 }
 
 .find {
@@ -271,38 +273,48 @@ body {
   color: var(--white);
 }
 
+/* WEEKEND STYLING */
+
 .weekend-trips {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   padding: 2rem;
-  background-color: var(--white);
-  border-radius: 1rem;
-  margin-top: 2rem;
   color: var(--color-primary-dark);
 }
 
 .weekend-trips-content {
+  display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.weekend-header {
+  margin-left: 15rem;
 }
 
+.weekend-header h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.weekend-header p span {
+  font-weight: 600;
+}
 .weekend-trips-card {
   display: flex;
-  width: 50%;
+  width: 20%;
   margin-top: 2rem;
   padding-left: 1rem;
   border-radius: 2rem;
 }
 .weekend-card img {
-  width: 30rem;
+  width: 28rem;
   border-radius: 1.5rem;
 }
 
 .weekend-card--content {
   margin-top: 1.2rem;
 }
-.weekend-card--content h5 span {
+.weekend-card--content h5 span.green {
   background-color: rgb(6, 99, 31);
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
@@ -312,16 +324,20 @@ body {
   color: var(--white);
   margin-bottom: 2rem;
 }
+.weekend-card--content span.light {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
 .rating {
   background-color: none;
 }
 .description h6 {
   font-size: 1.5rem;
   font-weight: 500;
+  padding: 0.5rem 0;
 }
 .description p {
   font-size: 1.2rem;
-  padding: 0.5rem 0;
 }
 
 .price h6 {
@@ -332,4 +348,20 @@ body {
   font-size: 1.2rem;
   line-height: -5;
   font-weight: 300;
+}
+
+.weekend-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 2.5rem;
+}
+.weekend-bottom img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+}
+.weekend-bottom h5 {
+  font-size: 1rem;
 }
